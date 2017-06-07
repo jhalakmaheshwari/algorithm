@@ -102,6 +102,26 @@ public class LinkedListCRUD<E> {
         }
     }
 
+    public void reverse(){
+        ListNode r=new ListNode();
+        if(head==null){
+
+        }
+        else{
+//            node.setNext(null);
+//            ListNode temp=head.getNext();
+            ListNode p,q;
+            for (p=head; (q=p.getNext())!=null; p=q){
+
+            }
+
+            for(p=head ; (q=p.getPrev())!=null; p=q) {
+                r=p;
+                r.setNext(p.getPrev());
+            }
+        }
+    }
+
     public static void main(String[] args) {
         LinkedListCRUD llc=new LinkedListCRUD();
         llc.insertAtBegin(new ListNode(20));
@@ -109,5 +129,7 @@ public class LinkedListCRUD<E> {
         llc.insertAtEnd(new ListNode(22));
         llc.insertAtEnd(new ListNode(23));
         llc.insert(24,2);
+//        llc.reverse();
+        System.out.println("Hey");
     }
 }
