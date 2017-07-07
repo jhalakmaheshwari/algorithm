@@ -13,12 +13,20 @@ public class BinaryTree<E> {
         node.getLeft().addRightChild(15);
         node.getRight().addLeftChild(17);
         node.getRight().addRightChild(19);
-        System.out.println("   "+node.getVal()+"   ");
+        System.out.println("PREORDER: ");
+        PreOrderTraversal.preOrder(node);
+        System.out.println();
+        System.out.println("POSTORDER ");
+        PostOrderTraversal.postOrder(node);
+        System.out.println();
+        System.out.println("INORDER ");
+        InOrderTraversal.inOrder(node);
+        /*System.out.println("   "+node.getVal()+"   ");
         System.out.println("/  \\");
         System.out.println(node.getLeft().getVal() + "    " + node.getRight().getVal());
         System.out.println("/  \\     "+ "/  \\");
         System.out.println(node.getLeft().getLeft().getVal()+"    "+node.getLeft().getRight().getVal()+"    "+node.getRight().getLeft().getVal()+"    "+node.getRight().getRight().getVal());
-
+*/
 
     }
 
