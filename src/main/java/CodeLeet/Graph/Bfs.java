@@ -17,9 +17,10 @@ public class Bfs {
         LinkedList<Integer> queue = new LinkedList<Integer>();
         visited[s] = true;
         queue.add(s);
+        System.out.println("BFS: ");
         while(!queue.isEmpty()){
             s = queue.poll();
-            System.out.println(s);
+            System.out.print(s + "  ");
             Iterator<Integer> it = adj[s].listIterator();
             while(it.hasNext()){
                 int val = it.next();

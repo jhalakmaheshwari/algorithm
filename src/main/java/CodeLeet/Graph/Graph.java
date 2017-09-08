@@ -38,6 +38,10 @@ public class Graph {
                 "(starting from vertex 2)");
         Bfs bfs = new Bfs();
         bfs.bfsSearch(2,g.adj);
+
+        DFS dfs = new DFS();
+        dfs.dfsStack(2,g.adj);
+        dfs.dfsRecursive(2,g.adj);
 //        g.BFS(2);
     }
 
